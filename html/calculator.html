@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/calculator.css">
+    
+</head> 
+<body>
+    <div class="calculator">   
+        <div class="show">   
+            <div id="changing_num">0</div> 
+        </div>    
+        <div class="keys">           
+            <div class="row_keys"> 
+                <div class="col key_margin"><button onclick= "{make_zero();}" class ="key">AC</button></div>
+                <div class="col key_margin"><button onclick="{operand_in('^');}" class="key">^</button></div>
+                <div class="col key_margin"><button onclick="{operand_in('%');}" class="key">%</button></div>
+                <div class="col"><button onclick="{operand_in('/');}" class="key">/</button></div> 
+            </div>  
+            <div class="row_keys">
+                <div class="col key_margin"><button onclick="{update_number(7);}" class="key">7</button></div>
+                <div class="col key_margin"><button onclick="{update_number(8);}" class="key">8</button></div>
+                <div class="col key_margin"><button onclick="{update_number(9);}" class="key">9</button></div>
+                <div class="col"><button onclick="{operand_in('*');}" class="key">*</button></div>
+            </div>
+            <div class="row_keys">
+                <div class="col key_margin"><button onclick="{update_number(4);}" class="key">4</button></div>
+                <div class="col key_margin"><button onclick="{update_number(5);}" class="key">5</button></div>
+                <div class="col key_margin"><button onclick="{update_number(6);}" class="key">6</button></div>
+                <div class="col"><button onclick="{operand_in('_');}" class="key">_</button></div>
+            </div> 
+            <div class="row_keys">
+                <div class="col key_margin"><button onclick="{update_number(1);}" class="key">1</button></div>
+                <div class="col key_margin"><button onclick="{update_number(2);}" class="key">2</button></div>
+                <div class="col key_margin"><button onclick="{update_number(3);}" class="key">3</button></div>
+                <div class="col"><button onclick="{operand_in('+');}" class="key">+</button></div>
+            </div>
+            <div class="row_keys">
+                <div class="col-6 key_margin"><button onclick="{update_number(0);}" class="key">0</button></div>
+
+                <div class="col-3 key_margin"><button class="key">.</button></div>
+                <div class="col-3"><button onclick="{operand_in('=');}" class="key">=</button></div> 
+            </div>
+        </div>
+    </div>
+    <script src="../js/calculator.js"></script>
+</body>
+</html>

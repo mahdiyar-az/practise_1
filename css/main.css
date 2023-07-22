@@ -1,0 +1,31 @@
+body{
+    color: black;
+}
+div.introduce{
+    padding: 40px 10px;
+    text-align: center;
+}
+a{
+    text-decoration: none;
+}
+div.games{
+    padding: 30px 0;
+    color: black;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: space-evenly;
+
+}
+div.game{
+    background-color: rgba(0, 128, 0, 0.473);
+    border-radius: 20px;
+    color: black;
+    padding: 10px 20px;
+    margin: 0 10%;
+}
+a.game{
+    color: black;
+}
