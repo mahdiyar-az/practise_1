@@ -1,5 +1,5 @@
 body{
-    background-color:rgb(216, 216, 216);    
+    background-color:rgba(216, 216, 216, 0.677);    
     padding-top: 30px;
     display: flex;
     flex-direction: row;
@@ -21,7 +21,17 @@ div.game{
 button.home{
     background-color: rgb(136, 136, 136);
     border-radius: 5px;
-    padding: 30px 30px;
+    
+    height: 80px;
+    width: 80px;
+}
+button.text_home{
+    font-size: medium;
+    color: red;
+    background-color: none;
+    background-color: rgb(136, 136, 136);;
+    padding: 0;
+ 
 }
 div.user{
     display: flex;
