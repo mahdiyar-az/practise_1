@@ -10,5 +10,5 @@ function change_tic(num){
         document.getElementById(`js_change_table_${num}`).innerHTML = `<button id="js_change_table_${num}" class="text_home">X</button>`;
         X_O = true;    
     }
-    
+
 }
