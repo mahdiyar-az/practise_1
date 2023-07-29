@@ -9,20 +9,22 @@
     <link rel="stylesheet" href="../css/todo.css">
     <script src="../js/todo.js"></script> 
 </head>  
-<body>   
+<body>           
     <div class="forms"> 
-        <div class="inputs">
-            <div class="formGroup">
-                <input type="text" class="form-control" id="usr" placeholder="your job">
-            </div>
-            <div class="formGroup">
-                <input type="datetime-local" class="form-control" id="pwd">
-            </div>
+        <form id="forms" action="">
+            <div class="inputs">
+                <div class="formGroup">
+                    <input type="text" class="form-control" id="usr" placeholder="your job">
+                </div>
+                <div class="formGroup">
+                    <input type="datetime-local" class="form-control" id="pwd">
+                </div>
 
-        </div>
-        <div class="submit">
-            <button class="btnSubmit">submit</button>
-        </div>
+            </div>
+            <div class="submit">
+                <button class="btnSubmit" type="button" onclick="addNewTodo()">submit</button>
+            </div>
+        </form>
     </div>
     <div class="todos">
         <p>To DO:</p>
