@@ -43,7 +43,7 @@ button.btnSubmit{
     background-color: green;
     border-radius: 10px;
 }
-div#todos{
+div.todos{
     margin-top: 5px;
     background-color: yellow;
     width: 50%;
