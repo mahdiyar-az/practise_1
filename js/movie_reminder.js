@@ -6,3 +6,7 @@ class movie{
         this.is_film = is_film;
     }
 }
+newMovie = []
+function addMovie (){
+    newMovie.push(new movie());
+}
