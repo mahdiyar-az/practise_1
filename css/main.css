@@ -10,18 +10,18 @@ a{
     text-decoration: none;
 }
 div.games{
-    padding: 30px 0;
+    padding: 35px 0;
     color: black;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
     align-content: space-evenly;
 
 }
 div.game{
-    background-color: rgba(0, 128, 0, 0.473);
+    background-color: rgba(0, 128, 0, 0.483);
     border-radius: 20px;
     color: black;
     padding: 10px 20px;

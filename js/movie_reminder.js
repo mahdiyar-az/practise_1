@@ -8,5 +8,10 @@ class movie{
 }
 newMovie = []
 function addMovie (){
-    newMovie.push(new movie());
+    a = new movie();
+    newMovie.push(a);
+}
+
+function test(){
+    a= document.querySelector("input");
 }
