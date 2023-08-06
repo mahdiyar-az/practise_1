@@ -10,7 +10,7 @@ a{
     text-decoration: none;
 }
 div.games{
-    padding: 35px 0;
+    padding: 30px 0;
     color: black;
     display: flex;
     flex-direction: row;
@@ -21,7 +21,7 @@ div.games{
 
 }
 div.game{
-    background-color: rgba(0, 128, 0, 0.483);
+    background-color: rgba(0, 128, 0, 0.460);
     border-radius: 20px;
     color: black;
     padding: 10px 20px;

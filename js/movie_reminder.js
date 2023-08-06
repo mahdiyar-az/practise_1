@@ -8,10 +8,17 @@ class movie{
 }
 newMovie = []
 function addMovie (){
-    a = new movie();
-    newMovie.push(a);
+    console.log("test");
+    a= document.querySelectorAll("input");
+    const name = console.log(a[0]);
+    const imdb = console.log(a[1]);
+    const link = console.log(a[2]);
+    console.log(name.value);
+    b = new movie(name[value]);
+    newMovie.push(b);
 }
 
 function test(){
-    a= document.querySelector("input");
+    
 }
+
