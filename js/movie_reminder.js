@@ -34,7 +34,7 @@ function movies(){
     
     let textfull = "";
     for (let c of newMovie){
-        textfull = textfull + `<li>${c.getName()} + ${c.getLink()} + ${c.getImdb()}</li>`;
+        textfull = textfull + `<li class:"list"><div>${c.getName()} </div> <div> ${c.getLink()} </div> <div>${c.getImdb()}</div></li>`;
     }
     document.querySelector("ul.movies").innerHTML = textfull;
 }
