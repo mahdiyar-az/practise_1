@@ -6,16 +6,32 @@ body{
 	align-items: stretch;
 	align-content: stretch;
 }
+nav.menusIcon{
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: flex-start;
+	align-items: center;
+	align-content: center;
+}
+nav a{
+    color: white;
+    margin: 5px;
+}
 nav.close{
     width: 3%;
     background-color: purple;
 }
 nav.open{
-    width: 3%;
+    width: 7%;
     background-color: purple;
 }
 body div.close{
     width: 97%;
+}
+body div.open{
+    width: 93%;
+    background-color: red;
 }
 div.introduce{
     padding: 40px 10px;
@@ -35,8 +51,14 @@ div.games{
     align-content: space-evenly;
 
 }
+a.inVisiable{
+    visibility: hidden;
+}
+a.visiable{
+    visibility: visible;
+}
 div.game{
-    background-color: rgba(0, 128, 0, 0.460);
+    /* background-color: rgba(0, 128, 0, 0.460); */
     border-radius: 20px;
     color: black;
     padding: 10px 20px;
