@@ -1,6 +1,21 @@
 body{
-    color: black;
-    background-color: white;
+	display: flex;
+	flex-direction: row-reverse;
+	flex-wrap: nowrap;
+	justify-content: flex-start;
+	align-items: stretch;
+	align-content: stretch;
+}
+nav.close{
+    width: 3%;
+    background-color: purple;
+}
+nav.open{
+    width: 3%;
+    background-color: purple;
+}
+body div.close{
+    width: 97%;
 }
 div.introduce{
     padding: 40px 10px;
