@@ -1,5 +1,32 @@
-button.testing{
-    padding: 20px;
-    background-color: blueviolet;
-    border-radius: 30px;
+body{
+    background-color: #f2f2f2;
+    width: 70%;
+    border-radius: 50px;
+    margin: 0 15%;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	align-items: center;
+	align-content: center;
+}
+header{
+    width: 100%;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	align-items: center;
+	align-content: center;
+}
+header div.topH{
+    padding: 25px 10px;
+    width: 100%;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	align-items: center;
+	align-content: center;
+
 }

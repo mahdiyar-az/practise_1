@@ -1,6 +1,2 @@
-const test = document.querySelector("button.testing");
-console.log(test);
-test.addEventListener("click",myfunc);
-function myfunc(){
-    alert("test");
-}
+const leftTopMovie = document.querySelector("button.leftTopMovie");
+const rightTopMovie = document.querySelector("button.rightTopMovie");
