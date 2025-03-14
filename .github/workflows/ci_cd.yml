@@ -1,0 +1,46 @@
+name: CI/CD Pipeline
+
+on:
+  pull_request:
+    branches:
+      - main
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: دریافت سورس‌کد
+        uses: actions/checkout@v3
+
+      - name: نصب Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18
+
+      - name: نصب وابستگی‌ها
+        run: npm install
+
+      - name: اجرای بررسی کد (Lint)
+        run: npm run lint
+
+      - name: اجرای تست‌ها
+        run: npm test
+
+  deploy:
+    needs: build
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: دریافت سورس‌کد
+        uses: actions/checkout@v3
+
+      - name: استقرار در Staging
+        run: |
+          echo "در حال استقرار در Staging..."
+          # اینجا بعداً اسکریپت‌های واقعی استقرار رو اضافه می‌کنیم
+
