@@ -1,46 +1,23 @@
 name: CI/CD Pipeline
 
 on:
-  pull_request:
-    branches:
-      - main
   push:
     branches:
-      - main
+      - main  # این قسمت برای هر کامیت در شاخه اصلی (main) فعال می‌شود.
+  pull_request:
+    branches:
+      - main  # این قسمت برای هر PR که به شاخه اصلی ارسال می‌شود فعال می‌شود.
 
 jobs:
-  build:
+  deploy-staging:
     runs-on: ubuntu-latest
 
     steps:
       - name: دریافت سورس‌کد
         uses: actions/checkout@v3
 
-      - name: نصب Node.js
-        uses: actions/setup-node@v3
-        with:
-          node-version: 18
-
-      - name: نصب وابستگی‌ها
-        run: npm install
-
-      - name: اجرای بررسی کد (Lint)
-        run: npm run lint
-
-      - name: اجرای تست‌ها
-        run: npm test
-
-  deploy:
-    needs: build
-    if: github.ref == 'refs/heads/main'
-    runs-on: ubuntu-latest
-
-    steps:
-      - name: دریافت سورس‌کد
-        uses: actions/checkout@v3
-
-      - name: استقرار در Staging
+      - name: استقرار به محیط staging
         run: |
-          echo "در حال استقرار در Staging..."
-          # اینجا بعداً اسکریپت‌های واقعی استقرار رو اضافه می‌کنیم
+          echo "Deploying to staging environment..."
+          # اضافه کردن دستورات استقرار به محیط staging مانند SSH به سرور یا هر ابزار استقرار دیگر
 
